@@ -18,6 +18,7 @@ section {
     padding: 20px;
     min-height: 100vh;
     text-align: center;
+    flex-direction: column; /* Changed to column for better mobile stacking */
 }
 
 .intro {
@@ -166,5 +167,35 @@ section {
 
     .footer p {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .bar {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .bar abbr {
+        top: 25px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .bar .thumb {
+        height: 10px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
     }
 }
