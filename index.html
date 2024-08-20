@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Skill Progress</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section class="intro">
+      <h1>My Skills Progress</h1>
+      <p>Track my skill development over time.</p>
+    </section>
+
+    <!-- Skills Progress Section -->
+    <section class="skills">
+      <div class="wrap">
+        <div class="bar">
+          <h3>HTML/HTML5 <abbr>85%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <h3>CSS/CSS3 <abbr>90%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <h3>JavaScript <abbr>70%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <h3>ReactJS <abbr>60%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <h3>Node.js <abbr>50%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+
+        <div class="bar">
+          <h3>Adobe Photoshop <abbr>75%</abbr></h3>
+          <div class="thumb"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from(".bar abbr", {
+        scrollTrigger: ".bar",
+        left: 0,
+        ease: Power2.easeInOut,
+        duration: 2,
+        stagger: 0.2,
+      });
+
+      gsap.from(".bar span", {
+        scrollTrigger: ".bar",
+        width: "0px",
+        ease: Power2.easeInOut,
+        duration: 2,
+        stagger: 0.2,
+      });
+    </script>
+  </body>
+</html>

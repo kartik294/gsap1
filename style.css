@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.intro {
+    background-color: #444;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.skills {
+    background-color: #2d2d2b;
+    flex-direction: column;
+}
+
+.wrap {
+    max-width: 60%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bar {
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.bar .thumb {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 12px;
+    background-color: #000;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+
+.bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(to left, #ff0057, #ffeb3b);
+    border-radius: 50px;
+}
+
+.bar abbr {
+    width: 50%;
+    display: inline-block;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 30px;
+    margin-left: -5px;
+    z-index: 1;
+    background: linear-gradient(to left, #ff0057, #ffe007);
+    box-shadow: 0 5px 30px rgb(255 0 87 / 50%), 0 5px 30px rgb(255, 255 59 / 50%);
+}
+
+.bar:nth-child(1) span {
+    width: 85%;
+}
+
+.bar:nth-child(2) span {
+    width: 90%;
+}
+
+.bar:nth-child(3) span {
+    width: 70%;
+}
+
+.bar:nth-child(4) span {
+    width: 60%;
+}
+
+.bar:nth-child(5) span {
+    width: 50%;
+}
+
+.bar:nth-child(6) span {
+    width: 75%;
+}
+
+.bar:nth-child(1) abbr {
+    left: 85%;
+}
+
+.bar:nth-child(2) abbr {
+    left: 90%;
+}
+
+.bar:nth-child(3) abbr {
+    left: 70%;
+}
+
+.bar:nth-child(4) abbr {
+    left: 60%;
+}
+
+.bar:nth-child(5) abbr {
+    left: 50%;
+}
+
+.bar:nth-child(6) abbr {
+    left: 75%;
+}
+
+.footer {
+    background-color: #444;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .wrap {
+        max-width: 90%;
+    }
+
+    .bar {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
